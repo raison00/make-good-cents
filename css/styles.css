@@ -1,0 +1,613 @@
+@font-face{
+    font-family: "HelveticaNeueW01-75Bold";
+    src:url("//assets.macysassets.com/dyn_img/fonts/3b303641-706e-4221-94c4-4fb491f4f8ef.woff2") format("woff2"),
+        url("//assets.macysassets.com/dyn_img/fonts/14ff6081-326d-4dae-b778-d7afa66166fc.woff") format("woff");
+}
+@font-face {
+    font-family: "HelveticaNeueW01-65Medi";
+    src:url("//assets.macysassets.com/dyn_img/fonts/3600b37f-2bf1-45f3-be3a-03365f16d9cb.woff2") format("woff2"), 
+    url("//assets.macysassets.com/dyn_img/fonts/60be5c39-863e-40cb-9434-6ebafb62ab2b.woff") format("woff");
+}
+@font-face{
+    font-family: "HelveticaNeueW01-55Roma";
+    src:url("//assets.macysassets.com/dyn_img/fonts/b0868b4c-234e-47d3-bc59-41ab9de3c0db.woff2") format("woff2"),
+        url("//assets.macysassets.com/dyn_img/fonts/bcf54343-d033-41ee-bbd7-2b77df3fe7ba.woff") format("woff");
+}
+@font-face{
+    font-family: "AvenirNextLTW01-Bold";
+    src:url("//assets.macysassets.com/dyn_img/fonts/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff") format("woff"),
+        url("//assets.macysassets.com/dyn_img/fonts/890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf") format("truetype");
+}
+
+/* GENERAL PAGE STYLES */
+
+.mgc-container h2,
+.mgc-container h3 {
+    font-family: 'AvenirNextLTW01-Bold', Arial, Sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: #e21a2c;
+    line-height: 42px;
+}
+.mgc-container h3 {
+    font-size: 20px;
+    line-height: 1.75;
+}
+.mgc-container p {
+    font-family: 'HelveticaNeueW01-55Roma', Arial, Sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.mgc-container p strong {
+    font-weight: normal;
+    font-family: 'HelveticaNeueW01-75Bold', Arial, Sans-serif;
+}
+.mgc-container .mgc-btn {
+    font-family: 'HelveticaNeueW01-75Bold', Arial, Sans-serif;
+    color: #e21a2c;
+    background: white;
+    display: inline-block;
+    border: 2px solid #e21a2c;
+    padding: 16px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.mgc-container .mgc-btn:hover {
+    background: #e21a2c;
+    color: white;
+}
+
+/* HERO */
+
+.mgc-hero {
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/make-good-cents_02.png');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    transition: 0s linear;
+    transition-property: background-position;
+    padding-bottom: .5%
+}
+.mgc-hero img {
+    margin: 54px 0 21px;
+}
+.mgc-hero h2 {
+    margin-bottom: 22px;
+}
+.mgc-hero h3 {
+    margin: 0 0 31px;
+}
+.mgc-hero h3:last-of-type {
+    margin-bottom: 17px;
+}
+.mgc-hero p {
+    color: #939598;
+    font-size: 16px;
+    line-height: 1.875;
+    width: 630px;
+    margin: 0 auto 32px;
+}
+.mgc-hero .mgc-btn {
+    margin-bottom: 40px;
+}
+
+/* YMCA IMAGE */
+
+.mgc-ymca {
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030588_01a.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+.mgc-ymca-arrow {
+    margin: 0 auto;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+
+/* ACTIVE GIVING */
+
+.mgc-active-giving {
+    padding: 34px 0 45px;
+}
+.mgc-active-giving h2 {
+    color: #92278f;
+}
+.mgc-active-giving .mgc-subheader {
+    color: #92278f;
+    width: 533px;
+    margin: 0 auto 45px;
+}
+.mgc-info1,
+.mgc-info2,
+.mgc-info3 {
+    height: 330px;
+    padding-top: 77px;
+    margin-bottom: 50px;
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030588_02.jpg');
+    background-repeat: no-repeat;
+    background-position: calc(50% + 106px) 50%;
+}
+.mgc-info2 {
+    padding-top: 63px;
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030588_03.jpg');
+    background-position: calc(50% - 109px) 50%;
+}
+.mgc-info3 {
+    padding-top: 80px;
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030588_04.jpg');
+    background-position: calc(50% + 106px) 50%;
+}
+.mgc-info1 p,
+.mgc-info2 p,
+.mgc-info3 p {
+    text-align: right;
+    line-height: 1.7;
+    width: 390px;
+    margin-left: calc(50% - 296px);
+}
+.mgc-info2 p {
+    text-align: left;
+    margin-left: calc(50% - 97px);
+}
+.mgc-info3 p {
+    width: 375px;
+    margin-left: calc(50% - 282px);
+}
+.mgc-active-giving .mgc-subfooter {
+    color: #939598;
+    width: 650px;
+    margin: 0 auto 32px;
+}
+.mgc-active-giving .mgc-btn {
+    color: #f15922;
+    border-color: #f15922;
+}
+.mgc-active-giving .mgc-btn:hover {
+    background-color: #f15922;
+}
+.mgc-cren {
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030588_cren.png');
+    height: 10px;
+}
+
+/* STORIES / SLICK SLIDESHOW */
+
+.mgc-slider-container {
+    width: 100%;
+    height: 585px;
+    background-color: #20bdbe;
+}
+.mgc-story {
+    width: 1024px;
+    margin: 0 auto;
+}
+.mgc-slick img {
+    margin: 0 auto;
+}
+.mgc-arrow-left,
+.mgc-arrow-right {
+    width: 60px;
+    height: 60px;
+    background: white;
+    cursor: pointer;
+    top: 262px;
+    position: absolute;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+.mgc-arrow-left {
+    left: 0;
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030588_arrowL.png');
+}
+.mgc-arrow-right {
+    right: 0;
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030588_arrowR.png');
+}
+.mgc-arrow-left:hover {
+    background: #006b6b;
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030588_arrowLa.png');
+}
+.mgc-arrow-right:hover {
+    background: #006b6b;
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030588_arrowRa.png');
+}
+.slick-dots li button:before {
+    font-size: 32px;
+    color: white;
+    opacity: .75;
+}
+.slick-dots li.slick-active button:before {
+    color: #006b6b!important;
+}
+ul.slick-dots {
+    position: absolute;
+    top: 517px;
+}
+ul.slick-dots li {
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+}
+.slick-dots button:before {
+    display: none;
+}
+.slick-dots li.slick-active {
+    background-color: #006b6b;
+    border: 2px solid #006b6b;
+}
+.mgc-story-icon {
+    vertical-align: top;
+    margin: 105px 0 0 110px;
+    display: inline-block;
+    width: 200px;
+}
+.mgc-story-icon img {
+    margin-bottom: 13px;
+}
+p.mgc-icon-title {
+    margin-bottom: 8px;
+    text-align: center;
+}
+p.mgc-icon-byline {
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+}
+.mgc-story-text {
+    display: inline-block;
+    width: 605px;
+    padding: 105px 30px 0 52px;
+}
+.mgc-story-text p {
+    color: #000000;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* FACTS */
+
+.mgc-facts {
+    background: #006b6b;
+    height: 400px;
+}
+.mgc-fact-container {
+    width: 862px;
+    margin: 0 auto;
+    text-align: center;
+}
+.mgc-fact1, 
+.mgc-fact2,
+.mgc-fact3 {
+    height: 400px;
+    width: 220px;
+    float: left;
+    position: relative;
+}
+.mgc-fact1 img, 
+.mgc-fact2 img,
+.mgc-fact3 img {
+    margin: 0 auto;
+}
+.mgc-fact1 p, 
+.mgc-fact2 p,
+.mgc-fact3 p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 180px;
+}
+.mgc-fact1 {
+    padding-top: 59px;
+}
+.mgc-fact2 {
+    width: 200px;
+    padding-top: 67px;
+}
+.mgc-fact3 {
+    padding-top: 63px;
+}
+.mgc-sep1,
+.mgc-sep2  {
+    float: left;
+    width: 1px;
+    height: 240px;
+    margin: 65px 60px 0 51px;
+    background: #ffffff;
+}
+.mgc-sep2 {
+    margin: 65px 50px 0 58px;
+}
+
+/* FOOTER */
+
+.mgc-footer {
+    height: 256px;
+}
+.mgc-footer p {
+    color: #040707;
+    font-family: 'HelveticaNeueW01-65Medi', Arial, Sans-serif;
+    font-size: 16px;
+    padding-top: 73px;
+}
+
+/* SOCIAL */
+
+.mgc-facebook {
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030588_share_f.png');
+    margin-bottom: 1px;
+}
+.mgc-facebook:hover {
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/make-good-cents_11a.png');
+}
+.mgc-twitter {
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030588_share_t.png');
+}
+.mgc-twitter:hover {
+    background-image: url('//assets.macysassets.com/dyn_img/creativepages/make-good-cents_12a.png');
+}
+.mgc-social {
+    position: absolute;
+    top: 473px;
+    right: 0;
+    width: 50px;
+    border-top: 1px solid black;
+}
+.mgc-social p {
+    margin: 10px 0;
+    font-size: 13px;
+    font-family: 'AvenirNextLTW01-Bold', Arial, Sans-serif;
+    color: black;
+}
+.mgc-social a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    transition: all 0.3s ease;
+    background-color: #333;
+}
+
+/******************
+ **    MOBILE    **
+ ******************/
+
+@media only screen and (max-width: 1023px) {
+
+    /* mobile: GENERAL PAGE STYLES */
+
+    .mgc-container h2,
+    .mgc-container h3 {
+        font-size: 7.5vw;
+    }
+    .mgc-container h3 {
+        font-size: 4.8vw;
+    }
+    .mgc-container p {
+        font-size: 4vw;
+        line-height: 1.6;
+    }
+    .mgc-container .mgc-btn {
+        padding: 4vw 22vw;
+        font-size: 3.6vw;
+    }
+    
+    /* mobile: HERO */
+    
+    .mgc-hero {
+        background-image: url('//assets.macysassets.com/dyn_img/creativepages/make-good-cents_m_02_bg.png');
+        background-size: 100vw auto;
+    }
+    .mgc-hero img {
+        width: 75vw;
+        margin: 10vw 0 5vw;
+    }
+    .mgc-hero h2 {
+        margin-bottom: 6vw;
+        line-height: 11vw;
+    }
+    .mgc-hero h3 {
+        margin: 0 0 6vw;
+    }
+    .mgc-hero h3:last-of-type {
+        margin-bottom: 7vw;
+    }
+    .mgc-hero p {
+        font-size: 3.8vw;
+        line-height: 1.7;
+        width: 80vw;
+        margin: 0 auto 9vw;
+    }
+    .mgc-hero .mgc-btn {
+        margin-bottom: 12vw;
+    }
+    
+    /* mobile: YMCA IMAGE */
+    
+    .mgc-ymca {
+        background-image: none;
+        height: auto;
+    }
+    .mgc-ymca img {
+        width: 100%;
+    }
+    
+    /* mobile: ACTIVE GIVING */
+    
+    .mgc-active-giving {
+        padding: 8vw 0 13vw;
+    }
+    .mgc-active-giving .mgc-subheader {
+        width: 80vw;
+        margin: 0 auto 9vw;
+    }
+    .mgc-info1,
+    .mgc-info2,
+    .mgc-info3 {
+        height: 103vw;
+        padding-top: 63.5vw;
+        margin-bottom: 9vw;
+        background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030589_info1.jpg');
+        background-size: 94vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .mgc-info2 {
+        height: 110vw;
+        padding-top: 65vw;
+        background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030589_info2.jpg');
+        background-size: 94vw;
+        background-position: center;
+    }
+    .mgc-info3 {
+        padding-top: 65vw;
+        background-image: url('//assets.macysassets.com/dyn_img/creativepages/C8030589_info3.jpg');
+        background-size: 94vw;
+        background-position: center;
+    }
+    .mgc-info1 p,
+    .mgc-info2 p,
+    .mgc-info3 p {
+        text-align: center;
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .mgc-info2 p {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .mgc-info3 p {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .mgc-active-giving .mgc-subfooter {
+        width: 85vw;
+        margin: 0 auto 10vw;
+    }
+    .mgc-cren {
+        background-size: 45vw;
+        height: 1.5vw;
+        background-position: 50% 1px;
+        background-repeat: repeat-x;
+    }
+    
+    /* mobile: STORIES */
+    
+    .mgc-slider-container {
+        width: 100%;
+        height: auto;
+    }
+    .mgc-story {
+        width: 100%;
+    }
+    .mgc-slick img {
+        margin: 0 auto;
+    }
+    .mgc-story-icon {
+        padding-top: 11vw;
+        margin: 0 0 7vw;
+        display: block;
+        width: 100%;
+    }
+    .mgc-story-icon img {
+        margin-bottom: 5vw;
+        width: 37.5vw;
+    }
+    p.mgc-icon-title {
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
+    p.mgc-icon-byline {
+        font-size: 3.8vw;
+    }
+    .mgc-story-text {
+        display: block;
+        width: 84vw;
+        padding: 0 0 6vw;
+        margin: 0 auto;
+        border-bottom: 1px solid #ffffff;
+    }
+    .mgc-noborder {
+        border: 0;
+    }
+    
+    /* mobile: FACTS */
+    
+    .mgc-facts {
+        height: auto;
+    }
+    .mgc-fact-container {
+        width: 100%;
+        padding: 11vw 0;
+    }
+    .mgc-fact1, 
+    .mgc-fact2,
+    .mgc-fact3 {
+        height: auto;
+        width: 100%;
+        float: none;
+    }
+    .mgc-fact1 img, 
+    .mgc-fact2 img,
+    .mgc-fact3 img {
+        width: 19.7vw;
+    }
+    .mgc-fact1 p, 
+    .mgc-fact2 p,
+    .mgc-fact3 p {
+        font-size: 3.8vw;
+        position: relative;
+        width: 70vw;
+        margin: 0 auto;
+        left: auto;
+        top: auto;
+    }
+    .mgc-fact1 {
+        padding-top: 0;
+    }
+    .mgc-fact2 {
+        width: 100%;
+        padding-top: 0;
+    }
+    .mgc-fact2 img {
+        margin-bottom: 4vw;
+        width: 18.25vw;
+    }
+    .mgc-fact2 p {
+        width: 60vw;
+    }
+    .mgc-fact3 {
+        padding-top: 0;
+    }
+    .mgc-fact3 img {
+        margin-bottom: 2vw;
+        width: 16.35vw;
+    }
+    .mgc-sep1,
+    .mgc-sep2  {
+        float: none;
+        width: 80vw;
+        height: 1px;
+        margin: 7vw auto;
+    }
+    
+    /* mobile: FOOTER */
+    
+    .mgc-footer {
+        height: auto;
+        padding: 10vw 0;
+    }
+    .mgc-footer p {
+        font-size: 4vw;
+        margin: 0 0 2.5vw;
+        padding-top: 0;
+    }
+    .mgc-footer img {
+        width: 79.2vw;
+    }
+}
